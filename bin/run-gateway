@@ -6,4 +6,4 @@ xvfb-daemon-run \
   -Dsun.java2d.noddraw=true \
   -Dswing.boldMetal=false \
   -Dsun.locale.formatasdefault=true -Xmx512M \
-  ibgateway.GWClient .
+  ibgateway.GWClient username=$USER password=$PASSWD .
