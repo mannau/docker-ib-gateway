@@ -4,10 +4,10 @@ Docker container that launches the Interactive Brokers Gateway GUI inside of an 
 
 ## Usage
 
-    docker pull clifton/ib-gateway
-    docker run -e VNC_PASSWORD=mypass -p 5900:5900 -p 4003:4003 -d clifton/ib-gateway
+    docker pull mannau/docker-ib
+    docker run -e USER=<username> -e PASSWD=<password> -p 5900:5900 -p 4003:4003 -d mannau/docker-ib
 
-At this point, you should be able to connect with VNC and log in to the gateway. Once logged in, port 4003 will be open for you to make API calls against.
+Once logged in, port 4003 will be open for you to make API calls against.
 
 ## Contributing
 
